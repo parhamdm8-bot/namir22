@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>نمیر کافه</title>
+  <meta name="description" content="منوی نمیر کافه — روحِ قدیمی، تجربه‌ی امروزی">
+  <meta name="theme-color" content="#F5F0E5">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2370C5BB'/%3E%3Cpath d='M16 26h28v12a10 10 0 0 1-10 10h-8a10 10 0 0 1-10-10zM44 29h4a5 5 0 0 1 0 10h-4' fill='none' stroke='%23292B28' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="fontLink" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Apply saved theme before first paint (visitor preference only — not site data).
+    try {
+      var t = localStorage.getItem('namir_theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+<body class="is-loading">
+
+<!-- Shared SVG symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 8 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6 7 7M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="m6 14 6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <!-- Default NAMIR cup mark (used when no logo is uploaded) -->
+    <symbol id="logo-cup" viewBox="0 0 120 120">
+      <g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+        <path class="draw" d="M26 52h58v26a22 22 0 0 1-22 22h-14a22 22 0 0 1-22-22z"/>
+        <path class="draw" d="M84 58h6a11 11 0 0 1 0 22h-6"/>
+        <path class="draw" d="M18 106h74"/>
+        <path class="draw steam" d="M46 40c-5-6 5-9 0-16M62 40c-5-6 5-9 0-16"/>
+      </g>
+    </symbol>
+    <!-- Ornament divider -->
+    <symbol id="orn" viewBox="0 0 220 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+        <path d="M6 12h78M136 12h78"/>
+        <path d="M96 12c4-8 10-8 14 0 4 8 10 8 14 0"/>
+        <circle cx="110" cy="12" r="2.2" fill="currentColor" stroke="none"/>
+      </g>
+    </symbol>
+    <symbol id="bean" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="20" cy="20" rx="11" ry="16" transform="rotate(35 20 20)"/><path d="M13 29c8-4 6-14 14-18"/></g></symbol>
+  </defs>
+</svg>
+
+<!-- Intro animation -->
+<div id="intro" class="intro" aria-hidden="true">
+  <div class="intro__stage" id="introStage"></div>
+  <button type="button" class="intro__skip" id="introSkip">رد کردن</button>
+</div>
+
+<!-- Fixed navigation -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <div class="nav__left">
+      <a id="navPhone" class="nav__link" href="tel:" aria-label="تماس تلفنی">
+        <svg class="ico"><use href="#i-phone"/></svg><span class="nav__txt" id="navPhoneTxt"></span>
+      </a>
+      <a id="navInsta" class="nav__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="اینستاگرام">
+        <svg class="ico"><use href="#i-insta"/></svg><span class="nav__txt" id="navInstaTxt" dir="ltr"></span>
+      </a>
+    </div>
+    <button type="button" id="brandBtn" class="nav__brand" aria-label="نام کافه"><span id="brandName">نمیر کافه</span></button>
+    <div class="nav__right">
+      <button type="button" id="themeBtn" class="icon-btn" aria-label="تغییر حالت روز و شب">
+        <svg class="ico ico--moon"><use href="#i-moon"/></svg><svg class="ico ico--sun"><use href="#i-sun"/></svg>
+      </button>
+      <button type="button" id="aboutBtn" class="btn btn--primary btn--sm">درباره ما</button>
+    </div>
+  </div>
+</header>
+
+<div id="siteError" class="site-error" hidden></div>
+
+<main id="site" class="site">
+  <section class="hero" aria-labelledby="heroTitle">
+    <svg class="hero__bean hero__bean--a"><use href="#bean"/></svg>
+    <svg class="hero__bean hero__bean--b"><use href="#bean"/></svg>
+    <div class="hero__mark" id="heroMark"></div>
+    <p class="hero__en" id="heroEn" dir="ltr">NAMIR CAFE</p>
+    <h1 class="hero__title" id="heroTitle">نمیر کافه</h1>
+    <p class="hero__tag" id="heroTag"></p>
+    <svg class="orn"><use href="#orn"/></svg>
+  </section>
+
+  <section class="menu-wrap" aria-label="منو">
+    <div class="search">
+      <svg class="ico"><use href="#i-search"/></svg>
+      <input id="search" type="search" inputmode="search" enterkeyhint="search" autocomplete="off"
+             placeholder="جستجوی محصول…" aria-label="جستجوی محصول">
+      <button type="button" id="searchClear" class="search__clear" aria-label="پاک کردن جستجو" hidden><svg class="ico"><use href="#i-x"/></svg></button>
+    </div>
+    <nav class="chips" id="chips" aria-label="دسته‌بندی‌ها"></nav>
+    <div id="menu" class="menu" aria-live="polite"></div>
+    <div id="noResults" class="empty" hidden>
+      <svg class="empty__ico"><use href="#logo-cup"/></svg>
+      <p>محصولی با این نام پیدا نشد.</p>
+      <button type="button" class="btn btn--ghost btn--sm" id="noResultsClear">پاک کردن جستجو</button>
+    </div>
+    <div id="menuSkeleton" class="skeleton" aria-hidden="true"></div>
+  </section>
+
+  <footer class="footer" id="about">
+    <svg class="orn orn--footer"><use href="#orn"/></svg>
+    <div class="footer__grid">
+      <section class="footer__about">
+        <h2 id="aboutTitle">درباره‌ی ما</h2>
+        <p class="lead" id="aboutIntro"></p>
+        <p id="aboutDesc"></p>
+        <p id="aboutExtra"></p>
+      </section>
+      <section class="footer__info">
+        <h2>اطلاعات تماس</h2>
+        <ul class="info" id="infoList"></ul>
+      </section>
+      <section class="footer__hours">
+        <h2>ساعات کاری</h2>
+        <div id="hoursBox" class="hours"></div>
+      </section>
+    </div>
+    <div class="credit">
+      <a href="https://t.me/P_DM_8" target="_blank" rel="noopener noreferrer">طراحی و توسعه · P_DM_8</a>
+    </div>
+  </footer>
+</main>
+
+<!-- Product details popup -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="mName" tabindex="-1">
+    <button type="button" class="modal__close" data-close aria-label="بستن"><svg class="ico"><use href="#i-x"/></svg></button>
+    <div class="modal__media"><img id="mImg" alt="" decoding="async"><span class="modal__badge" id="mBadge" hidden></span></div>
+    <div class="modal__body">
+      <h3 id="mName"></h3>
+      <div class="price" id="mPrice"></div>
+      <p class="modal__reason" id="mReason" hidden></p>
+      <p class="modal__desc" id="mDesc"></p>
+      <div id="mIngBox" hidden>
+        <h4>ترکیبات</h4>
+        <ul class="tags" id="mIng"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" id="toTop" class="to-top" aria-label="بازگشت به بالای صفحه"><svg class="ico"><use href="#i-up"/></svg></button>
+
+<div id="toasts" class="toasts" aria-live="polite"></div>
+<div id="adminRoot"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
